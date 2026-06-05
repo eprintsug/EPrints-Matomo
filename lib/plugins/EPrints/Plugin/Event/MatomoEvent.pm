@@ -406,6 +406,7 @@ sub _get_day_access_id
 {
 	my ( $self, $day, $last ) = @_;
 
+	print STDERR "Day: ".$day."\n";
 	my $order = "-datestamp";
 	if (!$last){
 		$order = "datestamp";
@@ -640,7 +641,7 @@ sub initiate_historic_upload
 	my $today = EPrints::Time::iso_date();
 	#trigger up to but not including the first result today
 	#the cron job will run in the early hours tomorrow morning to send off today's (it's yesterday) accesses
-	my $to_access_id = $self->_get_day_access_id($today, 0);
+	my $to_access_id = $self->_get_day_access_id($today, 1);
 
 	if(! defined $to_access_id){
 		$self->_log("Unable to find access id from the beginning of today. Unable to initiate historic data upload");
@@ -802,6 +803,7 @@ sub _bulk_ping
 	my $content = $self->{json}->encode($payload);
 
 	$tracker_url->content( $content );
+	print STDERR "SENDING: ". $content . "\n";
 
 	my $response = $self->_user_agent->request($tracker_url);
 	# if we submmit json with the correct content-type header, we should get json back
@@ -845,6 +847,7 @@ sub _bulk_ping
 	}
 	else
 	{
+		print STDERR "SUCCESS: ". $response->decoded_content . "\n";
 		$self->_log("_bulk_ping successfully submitted " . scalar(@events) . " access events");
 		return 1;
 	}
