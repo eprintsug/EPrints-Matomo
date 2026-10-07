@@ -1,5 +1,8 @@
 #!/usr/bin/perl -w -I/opt/eprints3/perl_lib
 
+use FindBin;
+use lib "$FindBin::Bin/../../../../perl_lib", "$FindBin::Bin/../../../perl_lib";
+
 # ./start_historic_access_upload [archive id]
 # this will schedule in the upload of all access results from $c->{matomo}->{legacy_start_access_id} (default 0) to 
 # the end of yesterday.
