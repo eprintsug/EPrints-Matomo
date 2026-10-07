@@ -25,25 +25,25 @@
           <datasetid>document</datasetid>
           <filename>epm/eprints_matomo/bin/restart_batch.pl</filename>
           <mime_type>text/x-perl</mime_type>
-          <hash>d11a7755ba6e37d48ac19f1aad5f4ef3</hash>
+          <hash>3ff2f5d7859a6f9495e9cdfd97a5efb7</hash>
           <hash_type>MD5</hash_type>
-          <filesize>544</filesize>
+          <filesize>614</filesize>
         </file>
         <file>
           <datasetid>document</datasetid>
           <filename>epm/eprints_matomo/bin/start_historic_access_upload.pl</filename>
           <mime_type>text/x-perl</mime_type>
-          <hash>b7d62666bcd7ea703082cddb7e77bba7</hash>
+          <hash>c7e24dc89ff70547dd4d87aee4b48843</hash>
           <hash_type>MD5</hash_type>
-          <filesize>680</filesize>
+          <filesize>750</filesize>
         </file>
         <file>
           <datasetid>document</datasetid>
           <filename>epm/eprints_matomo/bin/yesterdays_accesses.pl</filename>
           <mime_type>text/x-perl</mime_type>
-          <hash>180d4766db15c7d61c4f37dfb71ff4bc</hash>
+          <hash>a7130f26a31c0aa5568ff4fc1c0b3d8d</hash>
           <hash_type>MD5</hash_type>
-          <filesize>518</filesize>
+          <filesize>588</filesize>
         </file>
         <file>
           <datasetid>document</datasetid>
@@ -65,9 +65,9 @@
           <datasetid>document</datasetid>
           <filename>epm/eprints_matomo/lib/plugins/EPrints/Plugin/Event/MatomoEvent.pm</filename>
           <mime_type>text/plain</mime_type>
-          <hash>b5a8d5f0f49fd9c8fd34360dc04c7cad</hash>
+          <hash>549ee26dc5be3cd8d159fc78ec716409</hash>
           <hash_type>MD5</hash_type>
-          <filesize>30857</filesize>
+          <filesize>30997</filesize>
         </file>
       </files>
       <mime_type>text/plain</mime_type>
