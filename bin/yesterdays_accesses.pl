@@ -1,4 +1,7 @@
-#!/usr/bin/perl -w -I/opt/eprints3/perl_lib
+#!/usr/bin/perl -w
+
+use FindBin;
+use lib "$FindBin::Bin/../../../../perl_lib", "$FindBin::Bin/../../../perl_lib";
 
 # ./yesterdays_accesses [archive id]
 # this will schedule in the upload of all access results from yesterday, using UTC to avoid clock changing issues 
